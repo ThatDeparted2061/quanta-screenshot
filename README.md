@@ -49,3 +49,4 @@ You should see a notification like:
 - If question text is blurry, output may be `Qunknown. UNKNOWN`.
 - Output is intentionally strict and short: only `Q<number>. <A/B/C/UNKNOWN>`.
 - Default model is `qwen3.5:4b` (change in `.env` via `OLLAMA_MODEL=...`).
+- Screenshot capture now tries multiple tools (`gnome-screenshot` → `grim` → `import` → `scrot`) for better compatibility.

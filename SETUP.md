@@ -14,7 +14,7 @@ cd quanta-screenshot
 This installs:
 - Python venv + pip deps
 - `tesseract-ocr` (OCR)
-- `gnome-screenshot` (screen capture)
+- `gnome-screenshot` (primary screen capture)
 - `libnotify-bin` (`notify-send` notifications)
 
 ## 3) Configure model
@@ -52,6 +52,7 @@ Expected notification format:
 - `Q2. A`
 
 ## Troubleshooting
+- **Screenshot command failed**: app auto-falls back across capture tools (`gnome-screenshot`, `grim`, `import`, `scrot`). Install one if missing.
 - **No text detected**: increase font size / zoom question area.
 - **UNKNOWN output**: OCR or prompt ambiguity; try a clearer screenshot.
 - **No notification**: verify `libnotify-bin` is installed and desktop notifications are enabled.
