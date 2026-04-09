@@ -1,9 +1,9 @@
-# Setup Guide — quanta-screeshot (Ubuntu 22.04+ GNOME)
+# Setup Guide — quanta-screenshot (Ubuntu 22.04+ GNOME)
 
 ## 1) Clone and enter project
 ```bash
-git clone https://github.com/ThatDeparted2061/quanta-screeshot.git
-cd quanta-screeshot
+git clone https://github.com/ThatDeparted2061/quanta-screenshot.git
+cd quanta-screenshot
 ```
 
 ## 2) Install dependencies

@@ -1,4 +1,4 @@
-# quanta-screeshot
+# quanta-screenshot
 
 A local Ubuntu app that:
 1. Triggers on `Ctrl+Shift+X`
@@ -17,7 +17,7 @@ Use only for your own practice/testing environments where you have permission.
 
 ## Setup
 ```bash
-cd quanta-screeshot
+cd quanta-screenshot
 ./scripts/install.sh
 ```
 
