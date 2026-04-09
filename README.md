@@ -48,4 +48,4 @@ You should see a notification like:
 - OCR quality depends on screenshot clarity.
 - If question text is blurry, output may be `Qunknown. UNKNOWN`.
 - Output is intentionally strict and short: only `Q<number>. <A/B/C/UNKNOWN>`.
-- Default model is `qwen3:4b` (change in `.env` via `OLLAMA_MODEL=...`).
+- Default model is `qwen3.5:4b` (change in `.env` via `OLLAMA_MODEL=...`).
