@@ -26,13 +26,13 @@ nano .env
 Default values:
 ```env
 OLLAMA_BASE_URL=http://127.0.0.1:11434
-OLLAMA_MODEL=llama3.1:8b
+OLLAMA_MODEL=qwen3:4b
 NOTIFY_TIMEOUT_MS=4500
 ```
 
 ## 4) Start Ollama
 ```bash
-ollama pull llama3.1:8b
+ollama pull qwen3:4b
 ollama serve
 ```
 
