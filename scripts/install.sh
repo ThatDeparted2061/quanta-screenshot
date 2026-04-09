@@ -18,4 +18,4 @@ if [[ ! -f .env ]]; then
 fi
 
 echo "[+] Install complete"
-echo "[i] Ensure Ollama is running and model is pulled: ollama pull llama3.1:8b"
+echo "[i] Ensure Ollama is running and model is pulled: ollama pull qwen3.5:4b"

@@ -17,10 +17,10 @@ You are solving a multiple-choice quiz question extracted from a screenshot.
 
 Return STRICT JSON only, with keys:
 - question_number: string (prefer just the number like "2", otherwise "unknown")
-- answer: one of "A", "B", "C", or "UNKNOWN"
+- answer: one of "A", "B", "C", "D", or "UNKNOWN"
 
 Rules:
-- Only choose from A/B/C.
+- Only choose from A/B/C/D.
 - If text is unclear, set answer to "UNKNOWN".
 - No explanation text.
 
@@ -71,7 +71,7 @@ def solve_question(question_text: str) -> Tuple[str, str]:
     qn = qn.upper().replace("Q", "").replace(".", "").strip() or "unknown"
 
     ans = str(parsed.get("answer", "UNKNOWN")).upper().strip()
-    if ans not in {"A", "B", "C", "UNKNOWN"}:
+    if ans not in {"A", "B", "C", "D", "UNKNOWN"}:
         ans = "UNKNOWN"
 
     return qn, ans
