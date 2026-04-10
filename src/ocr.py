@@ -53,6 +53,6 @@ def capture_fullscreen() -> Path:
 
 
 def image_to_text(image_path: Path) -> str:
-    img = Image.open(image_path)
-    text = pytesseract.image_to_string(img)
+    with Image.open(image_path) as img:
+        text = pytesseract.image_to_string(img)
     return (text or "").strip()
